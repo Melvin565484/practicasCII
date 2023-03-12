@@ -1,5 +1,5 @@
 <?php
-
+/*
     //echo phpinfo();
     $variable = "PROGRAMACION 4°";
     $entero = 20;
@@ -20,6 +20,6 @@
 
     //operador  nave espacial
     //<=>
-    echo  10<=>10;
-
+    //echo  10<=>10;
+*/
 ?>

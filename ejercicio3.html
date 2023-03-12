@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array en tabla</title>
+	<style>
+		table, th, td {
+			border: 2px solid black;
+			border-collapse: collapse;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<?php
+		// Definir el array
+		$datos = array( 
+    array( 
+    "nombre" => "Francisco Garcia", 
+    "telefono" => "5689741523", 
+    "correo" => "fgarcia@gmail.com", 
+    ), 
+    array( 
+    "nombre" => "Manuel Salinas", 
+    "telefono" => "2584369721", 
+    "correo" => "msalinas@gmail.com", 
+    ), 
+     array( 
+    "nombre" => "Johana Melara", 
+    "telefono" => "9875147536", 
+    "correo" => "jmelara@gmail.com", 
+    ) 
+    ); 
+
+
+    echo "<h2>Registros</h2>";
+    echo "<table>";
+        echo "<tr><td><h4>Nombre</h4></td><td><h4>Telefono</h4></td></td><td><h4>Correo</h4></td></tr>";
+		foreach ($datos as $fila) {
+			echo "<tr>";
+			foreach ($fila as $celda) {
+				echo "<td>$celda</td>";
+			}
+			echo "</tr>";
+		}
+		echo "</table>";
+	?>
+</body>
+</html>

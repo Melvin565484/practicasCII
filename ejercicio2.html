@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Datos Personales</title>
+	<style>
+		table, th, td {
+			border: 2px solid black;
+			border-collapse: collapse;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<?php
+		// Definir las variables con los datos personales
+		$nombreCompleto = "Melvin Santiago Rodriguez Mendoza";
+		$lugarNacimiento = "La Union, SRL";
+		$edad = 25;
+		$codigoEstudiante = "SMIS012021";
+
+		// Mostrar los datos en una tabla
+        echo "<h2>Datos personales</h2>";
+		echo "<table>";
+		echo "<tr><td><h4>Nombre completo</h4></td><td><h4>Lugar de nacimiento</h4></td></td><td><h4>Edad</h4></td><td><h4>Código de Estudiante</h4></td></tr>";
+		echo "<tr><td>$nombreCompleto</td><td>$lugarNacimiento</td><td>$edad años</td><td>$codigoEstudiante</td></tr>";
+		echo "</table>";
+	?>
+</body>
+</html>
