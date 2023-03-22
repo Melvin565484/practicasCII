@@ -281,5 +281,48 @@
         $instrumento->sonido();
 
         
+        echo "<h3>Coche</h3>";
+        //intefaces
+        interface IVolante{
+            public function Girar();
+            
+        }
 
+        interface IPito{
+            public function Pitar();
+        }
+
+        //implementacion de interfaces
+        class Coche implements IVolante, IPito{
+            public $coche;
+            public $color;
+
+            function __construct($coche, $color)
+            {
+                $this->coche= $coche;
+                $this->color= $color;
+            }
+
+            public function getCoche()
+            {
+                return $this->coche;
+            }
+            
+            public function getColor()
+            {
+                return $this->color;
+            }
+            public function girar()
+            {
+                echo "<br/> El coche esta Pitando";
+            }
+            public function pitar()
+            {
+                echo "<br/> El coche esta girando";
+            }
+            
+        }
+
+        $coche = new Coche("Coche","Azul");
+        echo $coche->pitar().$coche->girar()."<br/> El ". $coche->getCoche()." es color ".$coche->getColor(). "<br/>";
 ?>
